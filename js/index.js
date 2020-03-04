@@ -1,19 +1,10 @@
 function loadSkills(skills){
 		var i=0,j;
-		var skillsInnerHTML='';
-		while(i<skills.length){
-
-			var row = '<div class="row">';
-			for(j=i;j<i+6&&j<skills.length;j++){
-				var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
-				row+=skill;
-				
-			}
-			row+='</div>';
-			skillsInnerHTML+=row;
-			
-			i=j;
-		}
+		var skillsInnerHTML='<div>
+		<b>Machine learning<b>: ajdshdjshdsds
+		vjhsdkhsbkdsdskd
+		</div>';
+		
 		$('#skills').html(skillsInnerHTML);
 }
 
