@@ -1,122 +1,709 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez" >
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lekton" rel="stylesheet"/>
-      	<link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet"/>
-		<link rel='stylesheet' type="text/css" href='css/perfect-scrollbar.min.css' />
-		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
-		<link rel="stylesheet" type="text/css" href="css/devicon.min.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/materialize.min.js"></script>
-		<script src='js/perfect-scrollbar.jquery.min.js'></script>
-		<script src="js/sweetalert.min.js"></script>
-		<script src="js/typed.min.js"></script>	
-	</head>
-	<body onload="onBodyLoad()">
+<html lang="en">
+  <head>
+    <!-- Head Metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DEBDEEP</title>
+    <meta name='subject' content='Debdeep'>
+    <meta name="description" content="Debdeep"/>
+    <meta name='copyright' content='Debdeep'>
+    <meta name='robots' content='index,follow'>
+    <meta name='author' content='Debdeep'>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body id="home" class="one-page-parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Main Container -->
+    <div id="main" class="fluid">
+      <header>
+        <div class="wrapper">
+          <div class="overlay"></div>
+        </div>
+        <div class="overlay-content">
+          <div class="home-social">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/debdeepbandyopadhyay"><i class="fa fa-linkedin wow fadeInDown" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/deep.debdeep.banerjee"><i class="fa fa-facebook wow fadeInDown" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="https://twitter.com/ishwarsawale"><i class="fa fa-twitter wow fadeInDown"data-wow-delay=".2s" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a href="#"><i class="fa fa-google-plus wow fadeInDown"data-wow-delay=".4s" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a href="#"><i class="fa fa-behance wow fadeInDown"data-wow-delay=".6s" aria-hidden="true"></i></a></li> -->
+              <li><a href="https://github.com/dbdeep"><i class="fa fa-github-alt wow fadeInDown"data-wow-delay=".8s" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="text-light header-content">
+            <h1 class="text text-light wow fadeInLeft">Hello, I am</h1>
+            <h1 class="display-1 name font-weight-bold text-light wow fadeInLeft"data-wow-delay=".4s">Debdeep Bandyopadhyay</h1>
+            <p class="title wow fadeInUp" data-wow-delay=".8s"> Engineer | Passionately Curious Techie | Data Enthusiast </p>
+            <button class="btn btn-danger wow fadeIn" type="button" onclick="location.href='./resume/resume.pdf';"><i class="fa fa-print pr13"></i>PRINT RESUME</button>
+            <button class="btn btn-danger wow fadeIn" type="button" onclick="location.href='https://github.com/ishwarsawale/certification_list';"><i class="fa fa-certificate pr13"></i>DOCUMENTS</button>
+            <!-- <button class="btn btn-danger wow fadeIn" type="button" onclick="location.href='https://github.com/ishwarsawale/project_list';"><i class="fa fa-file-code-o pr13"></i>PROJECTS</button> -->
+          </div>
+        </div>
+      </header>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" data-spy="affix" data-offset-top="510">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#resume" class="nav-link">Resume</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav brand m-auto text-center">
+              <img src="assets/imgs/avatar1.jpg" alt="" class="circle-180 nav-logo-img">
+              <li class="nav-logo-title">
+                <h5 class="m-auto title mt5">Debdeep</h5>
+                <div class="subtitle mt4"> Engineer | Passionately Curious Techie | Data Enthusiast </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#price" class="nav-link">Projects</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="https://github.com/ishwarsawale/blog_list" class="nav-link">Blog</a>
+              </li> -->
+              <li class="nav-item last-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content Holder -->
+      <div id="content" class="container-fluid">
+        <!--About Section-->
+        <div class="row mb50" id="about">
+        <div class="col-md-4 p0">
+            <div class="card border border-right-0">
+              <div class="card-body p60 pt100">
+                <h3>Profiles</h3>
+                <p>   </p>
+                <p>   </p>
+                <h6 class="title">Data Science </h6>
+                <hr>
+                <p class="mt-20"><strong style="color: red;">Datacamp : </strong><a href="https://www.datacamp.com/profile/bandyopadhyaydebdeep" style="color:#7C7A74"> bandyopadhyaydebdeep</a></p>
+                <p>   </p>
+                <p>   </p>
+                <h6 class="title">Competitive Coding </h6>
+                <hr>
+                <p class="mt-20"><strong style="color: red;">Leetcode : </strong><a href="https://leetcode.com/user6339di/" style="color:#7C7A74"> user6339di</a></p>
+                <p class="mt-20"><strong style="color: red;">GeeksforGeeks : </strong><a href="https://auth.geeksforgeeks.org/user/debdeepbanerjee/profile" style="color:#7C7A74"> debdeepbanerjee</a></p>
+                <p class="mt-20"><strong style="color: red;">Techgig : </strong><a href="https://www.techgig.com/debdeepbandyopadhyay" style="color:#7C7A74"> debdeepbandyopadhyay</a></p>
+                <p class="mt-20"><strong style="color: red;">Hacherrank : </strong><a href="https://www.hackerrank.com/dbdeep" style="color:#7C7A74"> dbdeep</a></p>
+                <!-- <p>   </p>
+                <p>   </p>
+                <h6 class="title">Languages</h6>
+                <hr>
+                <h6 class="mt-20">English</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 89%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-20">Bengali</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-20">English</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> -->
+                <p>   </p>
+                <p>   </p>
+                <h6 class="title">Personal Data</h6>
+                <hr>
+                <ul class="mt25 info list-unstyled">
+                  <li><span><strong style="color: red;">Birthdate</strong></span> : 15th June 1996</li>
+                  <li><span><strong style="color: red;">Email</strong></span> : bandyopadhyay.debdeep@gmail.com</li>
+                  <li><span><strong style="color: red;">Phone/Whatsapp</strong></span> : +91 7003233706</li>
+                  <!-- <li><span>Skype</span> : John_Doe </li> -->
+                  <!-- <li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li> -->
+                </ul>
+                <ul class="list-unstyled socials text-center">
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-vimeo"></i></a></li> -->
+                  <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-flickr"></i></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p0">
+            <div class="card border border-right-0">
+              <div class="card-body p60 pt100">
+                <h3>About me</h3>
+                <p>      </p>
+                <p>     </p>
+                
+                <p class="mt-20">A dedicated, enthusiastic and high performimg individual, passionately curious about computing and technology and has an eye for building products that would solve real world problems . I love to code and believe in the power of programming to transform and improve the lives of people around the world.</p>
+                <p class="mt-20">I am currently working in Tata Consultancy Services as a <strong style="color: red;">Business Intelligence Developer</strong> for a renowned automobile giant in US using <strong style="color: red;">Agile</strong> methodologies.</p>
+                <p> I have keen interest in the field of <strong style="color: red;">FinTech , Data Science , Data modelling and System Design.</strong> </p>
+                <p class="mt-20">Apart from my regular routine, I like to workout to compensate for the calorie intake being a <strong style="color: red;">connoisseur foodie</strong> , listen to <strong style="color: red;">music</strong> or play online multiplayer <strong style="color: red;">games</strong> with friends.</p>
+                
+                <!-- <p class="mt-20">My area of research is  Artificial general intelligence(AGI). I am working on an application of reinforcement learning to create a Cognitive systems.</p>
+                <button class="btn btn-outline-danger mt30" type="button" onclick="location.href='./resume/resume.pdf';"><i class="icon-down-circled2 " ></i>Download CV</button> -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 p0">
+            <div class="card border">
+              <div class="card-body p60 pt100">
+                <h3>My Expertise</h3>
+                <div class="row mt25">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Scripting</h6>
+                    <p class="subtitle">C++, Java, Python, Groovy, Shell &amp; Batch</p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                    <div class="col-9">
+                      <h6 class="title">Oracle Enterprise Performance Management</h6>
+                      <p class="subtitle">Enterprise Planning and Budgeting Cloud Service (EPBCS)</p>
+                      <p class="subtitle">Financial Consolidation and Close (FCCS)</p>
+                      <p class="subtitle">Profitability and Cost Management Cloud (PCM)</p>
+                      <p class="subtitle">Enterprise Data Management Cloud Service (EDMCS)</p>
+                      <p class="subtitle">Hyperion Financial Management (HFM)</p>
+                      <p class="subtitle">Financial Data Quality Management Enterprise Edition (FDMEE)</p>
+                      <p class="subtitle">Essbase, MDX &amp; Maxl Scripting</p>
+                      <hr>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Data Engineering</h6>
+                    <p class="subtitle">SQl &amp; PLSQL, NoSQL(Apache Cassandra) , AWS Glue, AWS Redshift , Python , Informatica (Basic) , Autosys, Apache Airflow </p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 text-center text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9 mb3">
+                    <h6 class="title">Big Data</h6>
+                    <p class="subtitle">Spark, MapReduce , Kafka , AWS EMR </p>
+                    <hr>
+                  </div>
+                </div>
+                <!--                             <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                      <h6 class="title">Visualization Tools</h6>
+                      <p class="subtitle">R(ggplot), Python(Matplotlib), Tableau</p>
+                      <hr>
+                  </div>
+                  </div> -->
+                <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Data Visualization</h6>
+                    <p class="subtitle"> Python (Pandas, Matploitlib , Seaborn, ggplot) , Tableau </p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Data Science</h6>
+                    <p class="subtitle">Statistics, Python , Excel </p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Web Development</h6>
+                    <p class="subtitle">Html , Css , Javascript, Bootstrap , Flask</p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2 text-right text-danger"><i class="fa font30"></i></div>
+                  <div class="col-9">
+                    <h6 class="title">Cloud</h6>
+                    <p class="subtitle">AWS , Azure basic</p>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb5 bg-dark p-container text-light pt1 pb3 text-center">
+        </div> 
+        <!--Resume Section-->
+        <div class="row mb50 p-container" id="resume">
+          <div class="col-12 mb40">
+            <h2><span class="text-danger">My</span> Resume</h2>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Experience</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-briefcase font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="title text-danger">June 2019 - present</h6>
+                <P><strong>TATA Consultancy Services, BI Developer</strong></P>
+                <P class="subtitle">Working in an agile project where I implemented many modern techniques including Groovy scripting , REST API in Oracle Enterprise Planning and Budgeting Cloud Service (PBCS) and Financial Consolidation and Close (FCCS) for artifact migration from on premise to cloud.</P>
+                <P class="subtitle">Replaced deprecated VB script for extended analytics with JAVA API in Hyperion Financial Management (HFM) and also worked on different implementation using JAVA API in Essbase.</P>
+                <P class="subtitle">Have a hands on experience with Oracle Enterprise Data Management Cloud Service (EDMCS), Profitability and Cost Management Cloud (PCM), Batch scripting, MAXL, MDX Scripting, Financial Data Quality Management Enterprise Edition (FDMEE).</P>
+                <P class="subtitle">Have an fair understanding of financial consolidations process , currency translations, intercompany eliminations, monthly balancing, depreciation, Capex, Opex etc.<P class="subtitle">Worked with ETL products like Informatica, FDMEE, AWS Glue for data lineage creation.</P>
+                <hr>
+                <h6 class="title text-danger">Aug 2018 - Sep 2018</h6>
+                <P><strong>Reliance Jio , Data Analytics Intern</strong></P>
+                <P class="subtitle">Performed What-if and SWOT analysis of 50 SMEs, analyzed data and generated insights using Excel and Microsoft Kaizala to find out potential market for upcoming services .</P>
+                <hr>
+                <h6 class="title text-danger">Jan 2018 - Feb 2018</h6>
+                <P><strong>Tata Hitachi , R&amp;D Intern</strong></P>
+                <P class="subtitle">Designed and developed the cranking and charging system , electrical and sensor system of an excavator in NX-Ideas, AutoCAD</P>
+                
+                <hr>
+                <h6 class="title text-danger">Jun 2017 - Jul 2017</h6>
+                <P><strong>SAIL Durgapur Steel Plant , Vocational Training</strong></P>
+                <P class="subtitle">Explored the overall steel manufacturing process starting from coke oven plant, blast furnaces, raw material handling plant, sinter plant, merchant mill etc. and also the power generation, transmission and distribution inside the power plants. </P>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Education</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-graduation font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="title text-danger">2015 - 2019</h6>
+                <P> <strong>Techno India Salt Lake</strong></P>
+                <P> <strong>Maulana Abul Kalam Azad University of Technology (MAKAUT formerly WBUT)</strong></P>
+                <P> <strong>B.Tech Electrical Engineering</strong></P>
+                <!-- <P class="subtitle">Machine Learning, Hadoop, Java, Python, R, Business Analyatics, Statistical Analysis with R, Cloud Computing &amp; HPC Applications, </P> -->
+                <hr>
+                <h6 class="title text-danger">2013 - 2015</h6>
+                <P><strong>DAV Model School</strong></P>
+                <P><strong>Central Board of Secondary Education (CBSE)</strong></P>
+                <P><strong>Senior Secondary</strong></P>
+                <hr>
+                <h6 class="title text-danger">1999 - 2013</h6>
+                <P><strong>St. Michael's School</strong></P>
+                <P><strong>Indian Certificate of Secondary Education (ICSE)</strong></P>
+                <P><strong>Secondary</strong></P>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Skills</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-chart font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="m0 pb5">Oracle EPM Suite</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Data Science</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Data Engineering</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Corporate Finance</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Software Development</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Coding</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Position of Responsibility</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-people font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="m0 pb5"><strong style="color: red;">Volunteer Leader</strong> at Child Rights and You (CRY)</h6>
+                <h6>  </h6>
+                <h6 class="m0 pb5">Former <strong style="color: red;">Campus Ambassador</strong> at CASIO &amp; DELL </h6>
+                <h6>  </h6>
+                <h6 class="m0 pb5"><strong style="color: red;">Sponsorship Committee Head</strong> at Departmental Fest Eccentron</h6>
+                
+                
+              </div>
+            </div> -->
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Languages</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-microphone font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="m0 pb5">English</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Bengali</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="m0 pb5">Hindi</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Courses</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-graduation font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <ul class="mt25 info list-unstyled">
+                  <li><a href="https://confirm.udacity.com/4DLF46P2" style="color:#7C7A74">Product Manager Nanodegree-Udacity</a></li>
+                  <li><a href="https://confirm.udacity.com/3QAF794" style="color:#7C7A74">Data Engineering Nanodegree - Udacity</a></li>
+                  <li><a href="#" style="color:#7C7A74">Corporate Financial Analyst - Linkedin</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-d4be4e35-0006-432d-a3b4-c245efe4bb11.jpg?v=1586464888000" style="color:#7C7A74">Web Scraping in Python - Udemy</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-c64b27a5-44ed-427b-abed-e958f7f59d72.jpg?v=1587378170000" style="color:#7C7A74">The Complete Tableau Bootcamp for Data Visualization - Udemy</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-485c098a-93fc-46a6-a1ce-fa2cbaf34bb3.jpg?v=1591266340000" style="color:#7C7A74">Hyperion Financial Management Advanced Course</a></li>
+                  <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/3c5a74a690005d7aae6df5cc79681360e75376aa?raw=1" style="color:#7C7A74">Credit Risk Modelling in Python - DataCamp</a></li>
+                  <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/8b97b16d6c3d8f675a1b8a1648f865baf2e68cdf?raw=1" style="color:#7C7A74">Financial Forecasting in Python - DataCamp</a></li>
+                  <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/8b97b16d6c3d8f675a1b8a1648f865baf2e68cdf?raw=1" style="color:#7C7A74">Data Scientist with Python Track- Datacamp</a></li>
+                  <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/acf4708d704dcf0a66c5a35b36b9060777bcb402?raw=1" style="color:#7C7A74">Statistical thinking in Python</a></li>
+                  <li><a href="#" style="color:#7C7A74">Messenger Chatbot: Dialogflow and node.js- Udemy</a></li>
+                  <li><a href="#" style="color:#7C7A74">Design and Analysis of Algorithm</a></li>
+                  <li><a href="#" style="color:#7C7A74">Operating Systems</a></li>
+                  <li><a href="#" style="color:#7C7A74">Computer Organization and Microprocessors</a></li>
+                  <li><a href="#" style="color:#7C7A74">Computer Networks</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-HLY5ZMG4.jpg" style="color:#7C7A74">Internet of Things</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-1A6FUKEH.jpg" style="color:#7C7A74">System Design</a></li>
+                  <!-- <li><a href="https://www.coursera.org/account/accomplishments/verify/6FCGVS4K7UPM" style="color:#7C7A74">Introduction to Recommender Systems: Non-Personalized and Content-Based on Coursera</a></li>
+                  <li><a href="https://www.coursera.org/account/accomplishments/verify/VNS3KJCDC53M" style="color:#7C7A74">Nearest Neighbor Collaborative Filtering on Coursera</a></li>
+                  <li><a href="https://www.coursera.org/account/accomplishments/verify/VSWTCNHFSA7K" style="color:#7C7A74">Recommender Systems: Evaluation and Metrics on Coursera</a></li>
+                  <li><a href="https://www.coursera.org/account/accomplishments/verify/D8W3TVJW3UVZ" style="color:#7C7A74">Matrix Factorization and Advanced Techniques on Coursera</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header pt30 pl40 pr50">
+                <div class="pull-left">
+                  <h4>Position of Responsibility</h4>
+                  <span class="line"></span>
+                </div>
+                <div class="pull-right">
+                  <i class="icon-people font45 text-gray-600"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="m0 pb5"><strong style="color: red;">Volunteer Leader</strong> at Child Rights and You (CRY)</h6>
+                <h6>  </h6>
+                <h6 class="m0 pb5">Former <strong style="color: red;">Campus Ambassador</strong> at CASIO &amp; DELL </h6>
+                <h6>  </h6>
+                <h6 class="m0 pb5"><strong style="color: red;">Sponsorship Committee Head</strong> at Departmental Fest Eccentron</h6>
+                
+                
+              </div>
+            </div>
 
-		<div class="row">
-			<div id="pagea" class="page col m3 s12">
-				<div class="row"><h1 id="name" class="center-align"></h1></div>
-				<div id="image" class="row"><img class="circle" src=""></div>
-				<div id="contact" class="row">
-					
-				</div>
-				<div id="summary" class="row"><div class="col m12"><p></p></div></div>
-				<div id="links" class="row"></div>
-			</div>
-
-			<div id="pageb" class="page col m9 s12">
-				<ul id="tabs" class="tabs">
-					<li class="tab col s2"><a href="#hello"><b>Hello</b></a></li>
-					<li class="tab col s2"><a href="#skills"><b>Skills</b></a></li>
-					<li class="tab col s2"><a href="#projects"><b>Projects</b></a></li>
-					<li class="tab col s3"><a href="#experience"><b>Experience</b></a></li>
-					<li class="tab col s3"><a href="#education"><b>Education</b></a></li>
-					
-				</ul>
-				<div id="hello" class="info col m12 s12">
-
-					<div class="row">
-						<div id="helloText" class="col m6 s12 "></div>
-						<div class="col m6 s12">
-							<div id="believe" class="row">
-								<h4>I believe</h4>
-								<span></span>
-							</div>
-							<div id="likes" class="row"></div>
-						</div>
-					</div>		
-
-
-					<!-- Please support by not removing this section-->
-					<div id="moghyaSays" class="row">
-						<h6>Subjects of Interest</h6>	
-						<div class="col m6">
-							<div class="row">
-								<p>Physics, Computer science, clean energy, Machine Learning , Deep learning are my areas of interest</p>
-								<p>Apart from this i always keep myself updated with latest technologies with fair bit of knowledge in blockchain, Internet of things, Xaas , drones and flying cars. I believe every subject in the universe are interlinked.</p>
-								<p>But only subject that has always been a mystery to me is Chemistry :D </p>
-							</div>
-						</div>
-						<div class="col m6">
-							<div class="row">
-							<h4>Soft Skills I Have</h4>
-							</div>
-							<div class="row">
-								<div class="col m4 s4">Leadership</div>
-								<div class="col m4 s4">Management</div>
-								<div class="col m4 s4">Communication</div>			
-							</div>
-							<div class="row">
-								<div class="col m4 s4">Ethics</div>
-								<div class="col m4 s4">Team Player</div>
-								<div class="col m4 s4">Analytical</div>					
-							</div>
-							<div class="row">
-								<div class="col m4 s4">Creativity</div>
-								<div class="col m4 s4">Agility</div>
-								<div class="col m4 s4">Flexibility</div>			
-							</div>
-							<div class="row">
-								<div class="col m4 s4"></div>
-								<div class="col m4 s4"></div>
-								<div class="col m4 s4"></div>	
-							</div>
-							<div class="row">
-								<div class="col m4 s4"></div>
-								<div class="col m4 s4"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="skills" class="info col m12 s12"></div>
-				<div id="projects" class="info col m12 s12 "></div>
-				<div id="experience" class="info col m12 s12"></div>
-				<div id="education" class="info col m12 s12"></div>
-		
-			</div>
-		</div>
-		<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5eedd0004a7c6258179aff8e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-	</body>
-	<script src="js/index.js"></script>
+          </div>
+        </div>
+        <div class="row mb5 bg-dark p-container text-light pt1 pb3 text-center">
+        </div>
+        <!--service section-->
+        <div class="row mb50 p-container" id="service">
+          <div class="col-12 mb50">
+            <h2><span class="text-danger">My</span> Services</h2>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb50">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-layers text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+              <img src="./pics/spark.jpg"
+                        alt="" style="width:100%"> 
+                        <P>    </P>
+                <h6 class="title mb10"> <a href="#">Sparkify</a></h6>
+                <P class="subtitle">In this project, I modelled user activity data for a music streaming app called Sparkify, modelled the data both SQL and NoSQL databases , built ELT pipelines that extracted their data from AWS S3, staged them into AWS Redshift, and transformed data into a set of dimensional tables for the analytics team to continue finding insights in what songs their users are listening to.</P>
+                <P class="subtitle">Built a Data lake using JSON logs of user activity and song metadata , processed the data using Spark and finally deployed the spark process in AWS Cluster. Finally built a data pipelines to schedule, monitor and automate the processes.</P>
+                <button class="btn btn-danger border-0 bg-gold btn-lg rounded-lg mt20" type="button" onclick="location.href='https://github.com/dbdeep/Sparkify';">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb50">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-like text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+              <img src="./pics/sentiment.png"
+                        alt="" style="width:100%"> 
+                        <P>    </P>
+                <h6 class="title mb10"><a href="#">Product Review Sentimental Analysis</a></h6>
+                <P class="subtitle">Simplified and automated the task of finding out the principal aspects being talked about a particular product in its review section, extracting these aspects , identifying the sentiments associated with each of these aspects and at the end providing a summarized rating from all the review sentiments and listing the pros and cons of the various aspects of the product. </P>
+                <button class="btn btn-danger border-0 bg-gold btn-lg rounded-lg mt20" type="button" onclick="https://github.com/dbdeep/Product-Review-Sentiment-Analysis;">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb50">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-vector text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+              <img src="./pics/product_manager.jpg"
+                        alt="" style="width:100%"> 
+                        <P>    </P>
+                <h6 class="title mb10"><a href="#">LinkedIn Freshers- Product Manager</a></h6>
+                <P class="subtitle">Capstone Project for Udacity Product Manager Nanodegree which involved defining product strategy and KPIs based on market analysis, pitching a product vision "LinkedIn Freshers" to get stakeholder buy-in, and designing a user-centered low-fidelity and high-fidelity prototype that adheres to engineering constraints, developing an execution timeline to handle competing priorities, communicating a product roadmap that builds consensus amongst internal stakeholders, and create a comprehensive go to-market plan based on product KPIs and finally, performing test plan to enhance product features based on market data.</P>
+                <button class="btn btn-danger border-0 bg-gold btn-lg rounded-lg mt20" type="button" onclick="location.href='https://github.com/dbdeep/LinkedIn-Freshers-PMND';">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb50">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-basket-loaded text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+              <img src="./pics/recommendation.jpg"
+                        alt="" style="width:100%"> 
+                        <P>    </P>
+                <h6 class="title mb10"><a href="#">Product Recommendation Engine</a></h6>
+                <P class="subtitle">Built a recommendation engine which suggests similar products to the given product in any e-commerce websites based on title text based similarity using bag of words and TF-IDF or Text semantics based similarity using Word2vec or Visual based similarity using Deep learning frameworks like Keras and Tensorflow as deemed fit based on the use cases and A/B testing. </P>
+                <button class="btn btn-danger border-0 bg-gold btn-lg rounded-lg mt20" type="button" onclick="location.href='https://github.com/dbdeep/Amazon-Product-Recommendation-Engine';">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-camrecorder text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+              <img src="./pics/parking.jpg"
+                        alt="" style="width:100%"> 
+                        <P>    </P>
+                <h6 class="title mb10"><a href="#">Smart Car Parking</a></h6>
+                <P class="subtitle">Academic Project on IoT based Smart Car Parking system with Driver Face and License plate recognition during entry and exit and a mobile responsive website with cloud connectivity to find the vacant spaces across the city and to keep the parked vehicle under surveillance of the driver .</P>
+                <button class="btn btn-danger border-0 bg-gold btn-lg rounded-lg mt20" type="button" onclick="location.href='https://github.com/dbdeep/Smart-Car-Parking';">GitHub</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <div class="icon-container">
+                  <i class="icon-star text-danger service-icon" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="card-body pt20 pl40 pr50">
+                <h6 class="title mb10"><a href="./git.html">Soft Skills</a></h6>
+                <P class="subtitle">I worked on some hobby projects about which I write an article on LinkedIn. I also like to present my work to other people so we can grow together</P>
+                <P class="subtitle">I always try to improve my communication skills. I like to work on new technologies and ready to deal with any challenges.</P>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="wrapper-testmonial mb50 row">
+          <div class="overlay pb20 pt30 col-12">
+            <div class="row">
+              <div class="col-sm-10 col-xs-11 m-auto">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner text-white pb50">
+                    <div class="carousel-item active text-center">
+                      <img src="pics/saumo.jpg" alt="boostrap 4 free templates, bootstrap 4 resume template." class="circle-100 m20">
+                      <h3 class="my-font text-light m0">Saumo Pal</h3>
+                      <h6 class="font-weight-light text-light pb10">Capital One | Mercedes Benz | GSoC | IIT KGP</h6>
+                      <p class="text-light">" To be filled "</p>
+                      <ul class="mt20 list-unstyled socials p0 m0 pt30 text-center">
+                <!-- <li class="d-inline pr15"><a href="https://twitter.com/ishwarsawale"><i class="fa fa-twitter"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <img src="pics/Rupak.jpg" alt="boostrap 4 free templates, bootstrap 4 resume template." class="circle-100 m20">
+                      <h3 class="my-font text-light m0">Indranil Roy Chaudhury</h3>
+                      <h6 class="font-weight-light text-light pb10">Azure Architect | DevOps Engineer | Data Engineer | TCS</h6>
+                      <p class="text-light">" to be filled "</p>
+                      <ul class="mt20 list-unstyled socials p0 m0 pt30 text-center">
+                <!-- <li class="d-inline pr15"><a href="https://twitter.com/ishwarsawale"><i class="fa fa-twitter"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <img src="pics/biswarup.jpg" alt="boostrap 4 free templates, bootstrap 4 resume template." class="circle-100 m20">
+                      <h3 class="my-font text-light m0">Biswarup Bhattacharyya</h3>
+                      <h6 class="font-weight-light text-light pb10">Principal Consultant | Oracle Consulting | PWC | KPMG </h6>
+                      <p class="text-light">" to be filled "</p>
+                      <ul class="mt20 list-unstyled socials p0 m0 pt30 text-center">
+                <!-- <li class="d-inline pr15"><a href="https://twitter.com/ishwarsawale"><i class="fa fa-twitter"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="row" id="contact">
+          <div id="map"></div>
+          <div class="col-lg-5 ml-auto contact-block bg-light p60 wow fadeInLeft">
+            <h4>Send a Message</h4>
+            <span class="line mb30"></span>
+            <form action="mailto:ishwar.code@gmail.com" method="post" enctype="text/plain" >
+              <div class="form-group">
+                <input  class="form-control" id="form_name" type="text" name="name" placeholder="Name *" required="required">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="form_email" type="email" name="email" placeholder="Email *" required="required">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="form_message" name="message" placeholder="Message *" rows="7" required="required" data-error="Message."></textarea>
+              </div>
+              <div class="form-group ">
+                <input type="submit" class="form-control btn btn-outline-danger p10" value="Send Message">
+              </div>
+            </form>
+          </div>
+          <div class="info-col col-lg-3 bg-light pt60 p50 mr-auto wow fadeInRight">
+            <div class="contact-info">
+              <div class="pb30">
+                <h4>Get in Touch</h4>
+                <span class="line"></span>
+              </div>
+              <!--                         <div class="row mb15">
+                <div class="col-1 pt13 mr5">
+                    <i class="icon-phone font20"></i>
+                </div>
+                <div class="col-10">
+                    <h6 class="sm-titl d-inline">Phone : <br> <span class="font14">+ (123) 456-789</span></h6>
+                </div>
+                </div> -->
+              <div class="row mb15">
+                <div class="col-1 pt13 mr5">
+                  <i class="icon-map font20"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="sm-titl d-inline">Address :<br> <span class="font14">Durgapur, India.</span></h6>
+                </div>
+              </div>
+              <div class="row mb15">
+                <div class="col-1 pt13 mr5">
+                  <i class="icon-envelope font20"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="sm-titl d-inline">Email :<br> <span class="font14">bandyopadhyay.debdeep@gmail.com</span></h6>
+                </div>
+              </div>
+              <ul class="mt20 list-unstyled socials p0 m0 pt30 text-center">
+                <!-- <li class="d-inline pr15"><a href="https://twitter.com/ishwarsawale"><i class="fa fa-twitter"></i></a></li> -->
+                <li class="d-inline pr15"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                <!-- <li class="d-inline pr15"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                <li class="d-inline pr15"><a href="https://www.linkedin.com/in/ishwarsawale"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-dark text-light font14  pl30 pt30 pb30 my-font">
+          &copy; <script>document.write(new Date().getFullYear())</script><i class="fa fa-heart text-danger pr5 pl5 pt3"></i> By <a href="http://devcrud.com/"><span class="text-danger pl5" title="Bootstrap 4 Themes and Dashboards">Debdeep</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Core Scripts -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/affix.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <!--googlemaps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <!-- Core -->
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
