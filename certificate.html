@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Tw Cen MT';
+  margin: 0;
+  background-color: rgb(45,45,45);
+  color: white;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+ 
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(220,53,69);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 6.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h1 style="text-align:center"><b>DEGREES AND CERTIFICATES</b></h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1</div>
+    <img src="pics/1.ICSE.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2</div>
+    <img src="pics/2.CBSE.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3</div>
+    <img src="pics/3.MAKAUT.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4</div>
+    <img src="pics/PMND.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5</div>
+    <img src="pics/DEND.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6</div>
+    <img src="pics/4.Hitachi.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7</div>
+    <img src="pics/5.JiO.jpg" style="width:100%">
+  </div>
+   
+  <div class="mySlides">
+    <div class="numbertext">8</div>
+    <img src="pics/6.SAIL.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9</div>
+    <img src="pics/casio.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10</div>
+    <img src="pics/Dell Campassador Certificate-151.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11</div>
+    <img src="pics/CRY.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12</div>
+    <img src="pics/codechef.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">13</div>
+    <img src="pics/capgemini_tech_challenge.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">14</div>
+    <img src="pics/techgig1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">15</div>
+    <img src="pics/techgig2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/hackerrank.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/codevita.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/NCO.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/SOF.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/Datacamp.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/HFM.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/Tableau.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/Credit.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/forecast.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="pics/linkedin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="pics/Cloud Computing.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pics/1.ICSE.jpg" style="width:100%" onclick="currentSlide(1)" alt="10th Report card">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/2.CBSE.jpg" style="width:100%" onclick="currentSlide(2)" alt="12th Report card">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/3.MAKAUT.jpg" style="width:100%" onclick="currentSlide(3)" alt="Graduation Certificate">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/PMND.jpg" style="width:100%" onclick="currentSlide(4)" alt="Product Manager Nanodegree - Udacity">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/DEND.jpg" style="width:100%" onclick="currentSlide(5)" alt="Data Engineering Nanodegree - Udacity">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/4.Hitachi.jpg" style="width:100%" onclick="currentSlide(6)" alt="Internship certificate, TATA Hitachi, Kharagpur Plant">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/5.JiO.jpg" style="width:100%" onclick="currentSlide(7)" alt="Internship certificate, Reliance JIO">
+    </div>        
+    <div class="column">
+      <img class="demo cursor" src="pics/6.SAIL.jpg" style="width:100%" onclick="currentSlide(8)" alt="Vocational Trainee, SAIL Durgapur Steel Plant">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/casio.jpg" style="width:100%" onclick="currentSlide(9)" alt="Campus Ambassador certificate, CASIO">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/Dell Campassador Certificate-151.jpg" style="width:100%" onclick="currentSlide(10)" alt="Campus Ambassador certificate, DELL">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/CRY.jpg" style="width:100%" onclick="currentSlide(11)" alt="Volunteer Certificate, Child Rights and You">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/codechef.png" style="width:100%" onclick="currentSlide(12)" alt="Participation Certificate, SnackDown, CodeChef">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/capgemini_tech_challenge.jpg" style="width:100%" onclick="currentSlide(13)" alt="Certificate of Achievement, Techchallenge, Capgemini">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/techgig1.jpg" style="width:100%" onclick="currentSlide(14)" alt="Secured a rank 730 among 9245 participants in Data Science and Machine Learning contest, Techgig ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/techgig2.jpg" style="width:100%" onclick="currentSlide(15)" alt="Secured a rank 1772 among 26k participants in IBM 2020 Call for Code, Techgig ">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="pics/codevita.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/NCO.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/SOF.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div> -->
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pics/hackerrank.jpg" style="width:100%" onclick="currentSlide(16)" alt="Hackerrank's Hack the Interview V">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/codevita.jpg" style="width:100%" onclick="currentSlide(17)" alt="Secured a rank 1654 amongst 1Lakh+ students across 63 countries in TCS Codevita">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/NCO.jpg" style="width:100%" onclick="currentSlide(18)" alt="National Cyber Olympiad, Class 10th">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/SOF.jpg" style="width:100%" onclick="currentSlide(19)" alt="International Mathematics Olympiad, Class 12th">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/Datacamp.jpg" style="width:100%" onclick="currentSlide(20)" alt="Datascience Certification and Projects- Datacamp. (Profile link on the main page)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/HFM.jpg" style="width:100%" onclick="currentSlide(21)" alt="Hyperion Financial Management Advanced Course- Udemy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/Tableau.jpg" style="width:100%" onclick="currentSlide(22)" alt="Complete Tableau bootcamp for Data Visualization">
+    </div>        
+    <div class="column">
+      <img class="demo cursor" src="pics/Credit.jpg" style="width:100%" onclick="currentSlide(23)" alt="Credit Risk Modelling in Python">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/forecast.jpg" style="width:100%" onclick="currentSlide(24)" alt="Financial Forecasting in Python">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/linkedin.jpg" style="width:100%" onclick="currentSlide(25)" alt="Corporate Financial Analyst Course- LinkedIn">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/Cloud Computing.jpg" style="width:100%" onclick="currentSlide(26)" alt="Cloud Computing NPTEL, IIT Kharagpur">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="pics/codechef.png" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/capgemini_tech_challenge.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/techgig1.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/techgig2.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div> -->
+    <!-- <div class="column">
+      <img class="demo cursor" src="pics/codevita.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/NCO.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/SOF.jpg" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+    </div> -->
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
